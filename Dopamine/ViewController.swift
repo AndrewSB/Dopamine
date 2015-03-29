@@ -23,13 +23,11 @@ class ViewController: UIViewController {
     var backgroundColor: UIColor = UIColor.whiteColor() {
         didSet {
             DopeAnimate(animatingObject: self.view).fadeTo(backgroundColor)
-            sliderView.arrowColor = backgroundColor
+            
+            sliderView.arrowImageView?.backgroundColor = backgroundColor
         }
     }
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
@@ -39,6 +37,10 @@ class ViewController: UIViewController {
         sliderView.listners.append({ (percent: Double) in
             
             self.backgroundColor = UIColor.fadeBetweenColors(self.lastFullSetColor, secondColor: self.nextColor, percent: percent)
+            
+            if percent > 0.9 {
+                println("finish")
+            }
         })
     }
     
@@ -50,10 +52,6 @@ class ViewController: UIViewController {
         self.textLabel.pop_addAnimation(sprintAnimation, forKey: "springAnimation")
         
         lastFullSetColor = UIColor.randomColor()
-    }
-    
-    func animateBackgroundColor(percent: Double) {
-        
     }
 }
 

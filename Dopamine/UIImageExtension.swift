@@ -8,7 +8,7 @@
 
 import Foundation
 
-extension UIImage {
+extension UIImage {    
     func tint(color: UIColor) -> UIImage {
         let rect = CGRectMake(0, 0, self.size.width, self.size.height);
         UIGraphicsBeginImageContextWithOptions(rect.size, false, self.scale);

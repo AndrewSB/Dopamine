@@ -9,9 +9,9 @@
 import Foundation
 
 class DopeAnimate {
-    var animatingObject: UIView
+    var animatingObject: NSObject
     
-    init(animatingObject: UIView) {
+    init(animatingObject: NSObject) {
         self.animatingObject = animatingObject
     }
     

@@ -19,8 +19,6 @@ class Slider: UIView {
     var arrowImageView: UIImageView?
     var slidPercentage: Double = 0 {
         didSet {
-            println(slidPercentage)
-            
             for (index, element) in enumerate(listners) {
                 element(slidPercentage)
             }
@@ -28,7 +26,6 @@ class Slider: UIView {
     }
     
     var listners: [(Double) -> ()] = Array<(Double) -> ()>()
-    
 
     required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -70,39 +67,28 @@ class Slider: UIView {
     
     func handleDrag(recognizer: UIPanGestureRecognizer) {
         if let myView = recognizer.view {
-            switch (recognizer.state) {
-            case .Changed:
+            if recognizer.state == .Changed {
                 let translation = recognizer.translationInView(self)
                 let newPos = CGPoint(x:recognizer.view!.center.x + translation.x, y:recognizer.view!.center.y + translation.y)
                 
                 let v = recognizer.view!.frame
                 let f = sliderGrabbyThing!.frame
-
+                
                 if frameIsInFrame(CGRectMake(recognizer.view!.frame.origin.x + translation.x, recognizer.view!.frame.origin.y + translation.y, recognizer.view!.frame.width, recognizer.view!.frame.height), bgFrame: sliderGrabbyThing!.frame) {
                     myView.center = CGPointMake(newPos.x, myView.center.y)
                     recognizer.setTranslation(CGPointZero, inView: self)
                     
                     slidPercentage = sliderGrabbyThing!.center.x.toDouble() / (self.frame.width.toDouble() - sliderGrabbyThing!.frame.width.toDouble() / 2)
                 }
-                
-            default:
-                break
             }
         }
     }
     
     func frameIsInFrame(frame: CGRect, bgFrame: CGRect) -> Bool {
-        let small = frame.origin.x
-        let big = frame.origin.x + frame.width
-        
-        let before = small < 0
-        let beyond = big > self.frame.size.width
+        let before = frame.origin.x < 0
+        let beyond = (frame.origin.x + frame.width) > self.frame.size.width
             
         return !before && !beyond
     }
-
-    
-    
-
 }
 

@@ -11,9 +11,10 @@
 		463770851AC88C5700B31741 /* DopeAnimate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463770841AC88C5700B31741 /* DopeAnimate.swift */; };
 		463770871AC88DF900B31741 /* DopeSoundEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463770861AC88DF900B31741 /* DopeSoundEffect.swift */; };
 		463770891AC88E5F00B31741 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 463770881AC88E5F00B31741 /* AudioToolbox.framework */; };
-		4637708F1AC8915400B31741 /* Slider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4637708E1AC8915400B31741 /* Slider.swift */; };
+		4637708F1AC8915400B31741 /* DopeSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4637708E1AC8915400B31741 /* DopeSlider.swift */; };
 		463770911AC8977400B31741 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463770901AC8977400B31741 /* UIImageExtension.swift */; };
 		469BBCAF1AC8A3A6005295B1 /* CGFloatExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469BBCAE1AC8A3A6005295B1 /* CGFloatExtension.swift */; };
+		469BBCB11AC8C18D005295B1 /* DopeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469BBCB01AC8C18D005295B1 /* DopeViewController.swift */; };
 		46B710741A87D73F00575B10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B710731A87D73F00575B10 /* AppDelegate.swift */; };
 		46B710761A87D73F00575B10 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B710751A87D73F00575B10 /* ViewController.swift */; };
 		46B710791A87D73F00575B10 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46B710771A87D73F00575B10 /* Main.storyboard */; };
@@ -38,9 +39,10 @@
 		463770841AC88C5700B31741 /* DopeAnimate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DopeAnimate.swift; sourceTree = "<group>"; };
 		463770861AC88DF900B31741 /* DopeSoundEffect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DopeSoundEffect.swift; sourceTree = "<group>"; };
 		463770881AC88E5F00B31741 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
-		4637708E1AC8915400B31741 /* Slider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Slider.swift; sourceTree = "<group>"; };
+		4637708E1AC8915400B31741 /* DopeSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DopeSlider.swift; sourceTree = "<group>"; };
 		463770901AC8977400B31741 /* UIImageExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
 		469BBCAE1AC8A3A6005295B1 /* CGFloatExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGFloatExtension.swift; sourceTree = "<group>"; };
+		469BBCB01AC8C18D005295B1 /* DopeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DopeViewController.swift; sourceTree = "<group>"; };
 		46B7106E1A87D73F00575B10 /* Dopamine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dopamine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46B710721A87D73F00575B10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		46B710731A87D73F00575B10 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -95,6 +97,44 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		469BBCB21AC8C192005295B1 /* Dope */ = {
+			isa = PBXGroup;
+			children = (
+				4637708E1AC8915400B31741 /* DopeSlider.swift */,
+				469BBCB01AC8C18D005295B1 /* DopeViewController.swift */,
+				469BBCB51AC8C1CA005295B1 /* Abstract */,
+			);
+			name = Dope;
+			sourceTree = "<group>";
+		};
+		469BBCB31AC8C199005295B1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				463770821AC888D900B31741 /* UIColorExtension.swift */,
+				463770901AC8977400B31741 /* UIImageExtension.swift */,
+				469BBCAE1AC8A3A6005295B1 /* CGFloatExtension.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		469BBCB41AC8C1A8005295B1 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				469BBCB21AC8C192005295B1 /* Dope */,
+				469BBCB31AC8C199005295B1 /* Extensions */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		469BBCB51AC8C1CA005295B1 /* Abstract */ = {
+			isa = PBXGroup;
+			children = (
+				463770841AC88C5700B31741 /* DopeAnimate.swift */,
+				463770861AC88DF900B31741 /* DopeSoundEffect.swift */,
+			);
+			name = Abstract;
+			sourceTree = "<group>";
+		};
 		46B710651A87D73F00575B10 = {
 			isa = PBXGroup;
 			children = (
@@ -120,13 +160,8 @@
 			children = (
 				46B710731A87D73F00575B10 /* AppDelegate.swift */,
 				46B710751A87D73F00575B10 /* ViewController.swift */,
-				463770841AC88C5700B31741 /* DopeAnimate.swift */,
-				463770861AC88DF900B31741 /* DopeSoundEffect.swift */,
-				463770821AC888D900B31741 /* UIColorExtension.swift */,
-				463770901AC8977400B31741 /* UIImageExtension.swift */,
-				469BBCAE1AC8A3A6005295B1 /* CGFloatExtension.swift */,
+				469BBCB41AC8C1A8005295B1 /* Library */,
 				46B710771A87D73F00575B10 /* Main.storyboard */,
-				4637708E1AC8915400B31741 /* Slider.swift */,
 				46B7107A1A87D73F00575B10 /* Images.xcassets */,
 				46B7107C1A87D73F00575B10 /* LaunchScreen.xib */,
 				46B710711A87D73F00575B10 /* Supporting Files */,
@@ -296,11 +331,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				46B710761A87D73F00575B10 /* ViewController.swift in Sources */,
+				469BBCB11AC8C18D005295B1 /* DopeViewController.swift in Sources */,
 				463770871AC88DF900B31741 /* DopeSoundEffect.swift in Sources */,
 				463770911AC8977400B31741 /* UIImageExtension.swift in Sources */,
 				463770831AC888D900B31741 /* UIColorExtension.swift in Sources */,
 				46B710741A87D73F00575B10 /* AppDelegate.swift in Sources */,
-				4637708F1AC8915400B31741 /* Slider.swift in Sources */,
+				4637708F1AC8915400B31741 /* DopeSlider.swift in Sources */,
 				469BBCAF1AC8A3A6005295B1 /* CGFloatExtension.swift in Sources */,
 				463770851AC88C5700B31741 /* DopeAnimate.swift in Sources */,
 			);
