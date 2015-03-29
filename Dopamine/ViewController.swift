@@ -9,13 +9,18 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBOutlet weak var textLabel: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-    
-        let animation = POPSpringAnimation()
     }
     
+    @IBAction func buttonWasHit(sender: AnyObject) {
+        let sprintAnimation = POPSpringAnimation(propertyNamed: kPOPViewScaleXY)
+        sprintAnimation.toValue = NSValue(CGPoint: CGPointMake(0.9, 0.9))
+        sprintAnimation.velocity = NSValue(CGPoint: CGPointMake(2, 2))
+        sprintAnimation.springBounciness = 20
+        self.textLabel.pop_addAnimation(sprintAnimation, forKey: "springAnimation")
+    }
 }
 
