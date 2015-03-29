@@ -18,7 +18,8 @@ class ViewController: UIViewController {
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         
-        fadeBackgroundTo(UIColor.randomColor())
+        let fadeBG = DopeAnimate(animatingObject: self.view)
+        fadeBG.fadeTo(UIColor.randomColor())
     }
     
     @IBAction func buttonWasHit(sender: AnyObject) {
@@ -28,17 +29,9 @@ class ViewController: UIViewController {
         sprintAnimation.springBounciness = 20
         self.textLabel.pop_addAnimation(sprintAnimation, forKey: "springAnimation")
         
-        fadeBackgroundTo(UIColor.randomColor())
+        let fadeBG = DopeAnimate(animatingObject: self.view)
+        fadeBG.fadeTo(UIColor.randomColor())
     }
-    
-    func fadeBackgroundTo(color: UIColor) {
-        let animation = POPSpringAnimation(propertyNamed: kPOPViewBackgroundColor)
-        
-        animation.toValue = color.CGColor
-        
-        self.view.pop_addAnimation(animation, forKey: "colorAnimation")
-    }
-    
     
 }
 

@@ -9,5 +9,16 @@
 import Foundation
 
 class DopeAnimate {
-    class func 
+    var animatingObject: UIView
+    
+    init(animatingObject: UIView) {
+        self.animatingObject = animatingObject
+    }
+    
+    func fadeTo(color: UIColor) {
+        let animation = POPSpringAnimation(propertyNamed: kPOPViewBackgroundColor)
+        animation.toValue = color.CGColor
+        
+        self.animatingObject.pop_addAnimation(animation, forKey: "colorAnimation")
+    }
 }
