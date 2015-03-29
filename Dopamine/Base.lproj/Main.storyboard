@@ -33,11 +33,11 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bbQ-XT-6QE" customClass="Slider" customModule="Dopamine" customModuleProvider="target">
-                                <rect key="frame" x="206" y="321" width="188" height="75"/>
+                                <rect key="frame" x="175" y="321" width="250" height="75"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="75" id="oxG-tY-OBB"/>
-                                    <constraint firstAttribute="width" constant="188" id="xlg-cg-GAP"/>
+                                    <constraint firstAttribute="width" constant="250" id="xlg-cg-GAP"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -52,6 +52,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="sliderView" destination="bbQ-XT-6QE" id="g7Y-MJ-iQe"/>
                         <outlet property="textLabel" destination="aUz-F6-E8J" id="ON2-7D-Y5S"/>
                     </connections>
                 </viewController>

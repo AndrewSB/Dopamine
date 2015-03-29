@@ -10,6 +10,14 @@ import UIKit
 
 class ViewController: UIViewController {
     @IBOutlet weak var textLabel: UILabel!
+    @IBOutlet weak var sliderView: Slider!
+    
+    var backgroundColor: UIColor = UIColor.whiteColor() {
+        didSet {
+            DopeAnimate(animatingObject: self.view).fadeTo(backgroundColor)
+            sliderView.arrowColor = backgroundColor
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,9 +25,8 @@ class ViewController: UIViewController {
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
-        
-        let fadeBG = DopeAnimate(animatingObject: self.view)
-        fadeBG.fadeTo(UIColor.randomColor())
+
+        self.backgroundColor = UIColor.randomColor()
     }
     
     @IBAction func buttonWasHit(sender: AnyObject) {
