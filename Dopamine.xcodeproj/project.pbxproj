@@ -11,6 +11,7 @@
 		463770851AC88C5700B31741 /* DopeAnimate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463770841AC88C5700B31741 /* DopeAnimate.swift */; };
 		463770871AC88DF900B31741 /* DopeSoundEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463770861AC88DF900B31741 /* DopeSoundEffect.swift */; };
 		463770891AC88E5F00B31741 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 463770881AC88E5F00B31741 /* AudioToolbox.framework */; };
+		4637708F1AC8915400B31741 /* Slider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4637708E1AC8915400B31741 /* Slider.swift */; };
 		46B710741A87D73F00575B10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B710731A87D73F00575B10 /* AppDelegate.swift */; };
 		46B710761A87D73F00575B10 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B710751A87D73F00575B10 /* ViewController.swift */; };
 		46B710791A87D73F00575B10 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46B710771A87D73F00575B10 /* Main.storyboard */; };
@@ -35,6 +36,7 @@
 		463770841AC88C5700B31741 /* DopeAnimate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DopeAnimate.swift; sourceTree = "<group>"; };
 		463770861AC88DF900B31741 /* DopeSoundEffect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DopeSoundEffect.swift; sourceTree = "<group>"; };
 		463770881AC88E5F00B31741 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		4637708E1AC8915400B31741 /* Slider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Slider.swift; sourceTree = "<group>"; };
 		46B7106E1A87D73F00575B10 /* Dopamine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dopamine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46B710721A87D73F00575B10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		46B710731A87D73F00575B10 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 				463770861AC88DF900B31741 /* DopeSoundEffect.swift */,
 				463770821AC888D900B31741 /* UIColor extension.swift */,
 				46B710771A87D73F00575B10 /* Main.storyboard */,
+				4637708E1AC8915400B31741 /* Slider.swift */,
 				46B7107A1A87D73F00575B10 /* Images.xcassets */,
 				46B7107C1A87D73F00575B10 /* LaunchScreen.xib */,
 				46B710711A87D73F00575B10 /* Supporting Files */,
@@ -290,6 +293,7 @@
 				463770871AC88DF900B31741 /* DopeSoundEffect.swift in Sources */,
 				463770831AC888D900B31741 /* UIColor extension.swift in Sources */,
 				46B710741A87D73F00575B10 /* AppDelegate.swift in Sources */,
+				4637708F1AC8915400B31741 /* Slider.swift in Sources */,
 				463770851AC88C5700B31741 /* DopeAnimate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
