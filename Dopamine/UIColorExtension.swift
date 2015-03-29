@@ -33,13 +33,13 @@ extension UIColor {
     
     class func fadeBetweenColors(firstColor: UIColor, secondColor: UIColor, percent: Double) -> UIColor {
         
-        let firstC = CGColorGetComponents(firstColor.CGColor)
-        let secondC = CGColorGetComponents(secondColor.CGColor)
+        let compOne = CGColorGetComponents(firstColor.CGColor)
+        let compTwo = CGColorGetComponents(secondColor.CGColor)
         
-        let red = ((firstC[0].toDouble() * (1.0 - percent)) + (secondC[0].toDouble() * percent)) / 2
-        let green = ((firstC[1].toDouble() * (1.0 - percent)) + (secondC[1].toDouble() * percent)) / 2
-        let blue = ((firstC[2].toDouble() * (1.0 - percent)) + (secondC[2].toDouble() * percent)) / 2
-
-        return UIColor.fromRGB(red, green: green, blue: blue)
+        let red = Double(Double(compOne[0]) * (1-percent)) + Double(Double(compTwo[0]) * percent)
+        let green = Double(Double(compOne[1]) * (1-percent)) + Double(Double(compTwo[1]) * percent)
+        let blue = Double(Double(compOne[2]) * (1-percent)) + Double(Double(compTwo[2]) * percent)
+        
+        return UIColor.fromRGB(red*255, green: green*255, blue: blue*255)
     }
 }

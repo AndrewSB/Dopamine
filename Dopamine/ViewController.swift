@@ -18,6 +18,8 @@ class ViewController: UIViewController {
         }
     }
     
+    var nextColor: UIColor = UIColor.blueColor()
+    
     var backgroundColor: UIColor = UIColor.whiteColor() {
         didSet {
             DopeAnimate(animatingObject: self.view).fadeTo(backgroundColor)
@@ -32,9 +34,11 @@ class ViewController: UIViewController {
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
 
-        self.backgroundColor = UIColor.randomColor()
+        self.lastFullSetColor = UIColor.randomColor()
+//        self.nextColor = UIColor.randomColor()
         sliderView.listners.append({ (percent: Double) in
-            self.backgroundColor = UIColor.fadeBetweenColors(self.lastFullSetColor, secondColor: UIColor.randomColor(), percent: percent)
+            
+            self.backgroundColor = UIColor.fadeBetweenColors(self.lastFullSetColor, secondColor: self.nextColor, percent: percent)
         })
     }
     
@@ -45,8 +49,7 @@ class ViewController: UIViewController {
         sprintAnimation.springBounciness = 20
         self.textLabel.pop_addAnimation(sprintAnimation, forKey: "springAnimation")
         
-        let fadeBG = DopeAnimate(animatingObject: self.view)
-        fadeBG.fadeTo(UIColor.randomColor())
+        lastFullSetColor = UIColor.randomColor()
     }
     
     func animateBackgroundColor(percent: Double) {
