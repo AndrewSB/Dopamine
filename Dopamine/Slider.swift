@@ -21,14 +21,18 @@ class Slider: UIView {
         let imageHeight = imageWidth * (54/87)
         let arrowImageFrame = CGRectMake((sliderGrabbyThing.frame.width / 6), (sliderGrabbyThing.frame.height / 2) + (imageHeight / 2), imageWidth, imageHeight)
         
-        let arrowImage = UIImageView(frame: arrowImageFrame)
+        let arrowImageView = UIImageView(frame: arrowImageFrame)
         
-        sliderGrabbyThing.addSubview(arrowImage)
+        let arrowImage = UIImage(named: "arrow")!
+        
+        arrowImageView.image = UIImage(CGImage: arrowImage.CGImage, scale: arrowImage.scale, orientation: .Left)
+        
+        sliderGrabbyThing.addSubview(arrowImageView)
         self.addSubview(sliderGrabbyThing)
     }
 
     required init(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+        super.init(coder: aDecoder)
     }
     
     
