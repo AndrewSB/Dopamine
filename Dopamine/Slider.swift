@@ -11,13 +11,23 @@ import UIKit
 class Slider: UIView {
     var arrowColor: UIColor? {
         didSet {
-            
             arrowImageView!.image! = arrowImageView!.image!.tint(arrowColor!)
         }
     }
     
     var sliderGrabbyThing: UIView?
     var arrowImageView: UIImageView?
+    var slidPercentage: Double = 0 {
+        didSet {
+            println(slidPercentage)
+            
+            for (index, element) in enumerate(listners) {
+                element(slidPercentage)
+            }
+        }
+    }
+    
+    var listners: [(Double) -> ()] = Array<(Double) -> ()>()
     
 
     required init(coder aDecoder: NSCoder) {
@@ -29,15 +39,14 @@ class Slider: UIView {
         
         setup()
         addGestures()
-        
     }
     
     func setup() {
         self.layer.cornerRadius = self.frame.height / 2
         self.backgroundColor = UIColor(red: 1, green: 1, blue: 1, alpha: 0.5)
         
-        sliderGrabbyThing = UIView(frame: CGRectMake(2, 2, self.frame.height - 4, self.frame.height - 4))
-        sliderGrabbyThing!.layer.cornerRadius = self.frame.height / 2
+        sliderGrabbyThing = UIView(frame: CGRectMake(4, 4, self.frame.height - 8, self.frame.height - 8))
+        sliderGrabbyThing!.layer.cornerRadius = sliderGrabbyThing!.frame.height / 2
         sliderGrabbyThing!.backgroundColor = UIColor.whiteColor()
         
         let imageWidth = (sliderGrabbyThing!.frame.width * (2/3))
@@ -72,6 +81,8 @@ class Slider: UIView {
                 if frameIsInFrame(CGRectMake(recognizer.view!.frame.origin.x + translation.x, recognizer.view!.frame.origin.y + translation.y, recognizer.view!.frame.width, recognizer.view!.frame.height), bgFrame: sliderGrabbyThing!.frame) {
                     myView.center = CGPointMake(newPos.x, myView.center.y)
                     recognizer.setTranslation(CGPointZero, inView: self)
+                    
+                    slidPercentage = sliderGrabbyThing!.center.x.toDouble() / (self.frame.width.toDouble() - sliderGrabbyThing!.frame.width.toDouble() / 2)
                 }
                 
             default:
@@ -83,11 +94,8 @@ class Slider: UIView {
     func frameIsInFrame(frame: CGRect, bgFrame: CGRect) -> Bool {
         let small = frame.origin.x
         let big = frame.origin.x + frame.width
-
-        let selfframe = self.frame
         
         let before = small < 0
-        
         let beyond = big > self.frame.size.width
             
         return !before && !beyond

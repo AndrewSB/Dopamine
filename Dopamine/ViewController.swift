@@ -12,6 +12,12 @@ class ViewController: UIViewController {
     @IBOutlet weak var textLabel: UILabel!
     @IBOutlet weak var sliderView: Slider!
     
+    var lastFullSetColor: UIColor = UIColor.whiteColor() {
+        didSet {
+            backgroundColor = lastFullSetColor
+        }
+    }
+    
     var backgroundColor: UIColor = UIColor.whiteColor() {
         didSet {
             DopeAnimate(animatingObject: self.view).fadeTo(backgroundColor)
@@ -27,6 +33,9 @@ class ViewController: UIViewController {
         super.viewDidAppear(animated)
 
         self.backgroundColor = UIColor.randomColor()
+        sliderView.listners.append({ (percent: Double) in
+            self.backgroundColor = UIColor.fadeBetweenColors(self.lastFullSetColor, secondColor: UIColor.randomColor(), percent: percent)
+        })
     }
     
     @IBAction func buttonWasHit(sender: AnyObject) {
@@ -40,5 +49,8 @@ class ViewController: UIViewController {
         fadeBG.fadeTo(UIColor.randomColor())
     }
     
+    func animateBackgroundColor(percent: Double) {
+        
+    }
 }
 
