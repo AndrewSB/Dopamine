@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Slider: UIView {
+class Slider: DopeView {
     var arrowColor: UIColor? {
         didSet {
             arrowImageView!.image! = arrowImageView!.image!.tint(arrowColor!)
@@ -26,10 +26,6 @@ class Slider: UIView {
     }
     
     var listners: [(Double) -> ()] = Array<(Double) -> ()>()
-
-    required init(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-    }
     
     override func awakeFromNib() {
         super.awakeFromNib()
