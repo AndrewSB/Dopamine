@@ -11,6 +11,7 @@ import UIKit
 class DopeView: UIView {
     var dopeColor: UIColor = UIColor.whiteColor() {
         didSet {
+            
             for l in colorListners {
                 l(dopeColor)
             }
@@ -18,7 +19,8 @@ class DopeView: UIView {
     }
     
     var colorListners: [((UIColor) -> ())] = Array<(UIColor) -> ()>()
-        
+    
+    
     func construct() {
         
     }

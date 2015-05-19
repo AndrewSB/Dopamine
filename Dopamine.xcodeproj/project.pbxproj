@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		461C74EF1AC8CB0700848B38 /* DopeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461C74EE1AC8CB0700848B38 /* DopeView.swift */; };
+		461C74F11AC8D5C300848B38 /* ABImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461C74F01AC8D5C300848B38 /* ABImage.swift */; };
 		463770831AC888D900B31741 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463770821AC888D900B31741 /* UIColorExtension.swift */; };
 		463770851AC88C5700B31741 /* DopeAnimate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463770841AC88C5700B31741 /* DopeAnimate.swift */; };
 		463770871AC88DF900B31741 /* DopeSoundEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463770861AC88DF900B31741 /* DopeSoundEffect.swift */; };
@@ -38,6 +39,7 @@
 
 /* Begin PBXFileReference section */
 		461C74EE1AC8CB0700848B38 /* DopeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DopeView.swift; sourceTree = "<group>"; };
+		461C74F01AC8D5C300848B38 /* ABImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ABImage.swift; sourceTree = "<group>"; };
 		463770821AC888D900B31741 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		463770841AC88C5700B31741 /* DopeAnimate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DopeAnimate.swift; sourceTree = "<group>"; };
 		463770861AC88DF900B31741 /* DopeSoundEffect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DopeSoundEffect.swift; sourceTree = "<group>"; };
@@ -104,8 +106,8 @@
 		469BBCB21AC8C192005295B1 /* Dope */ = {
 			isa = PBXGroup;
 			children = (
-				4637708E1AC8915400B31741 /* DopeSlider.swift */,
 				469BBCB01AC8C18D005295B1 /* DopeViewController.swift */,
+				4637708E1AC8915400B31741 /* DopeSlider.swift */,
 				469BBCB51AC8C1CA005295B1 /* Abstract */,
 			);
 			name = Dope;
@@ -117,6 +119,7 @@
 				463770821AC888D900B31741 /* UIColorExtension.swift */,
 				463770901AC8977400B31741 /* UIImageExtension.swift */,
 				469BBCAE1AC8A3A6005295B1 /* CGFloatExtension.swift */,
+				461C74F01AC8D5C300848B38 /* ABImage.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -169,9 +172,7 @@
 				469BBCB41AC8C1A8005295B1 /* Library */,
 				46B710771A87D73F00575B10 /* Main.storyboard */,
 				46B7107A1A87D73F00575B10 /* Images.xcassets */,
-				46B7107C1A87D73F00575B10 /* LaunchScreen.xib */,
 				46B710711A87D73F00575B10 /* Supporting Files */,
-				46B710941A87E5C800575B10 /* Dopamine-Bridging-Header.h */,
 			);
 			path = Dopamine;
 			sourceTree = "<group>";
@@ -179,6 +180,8 @@
 		46B710711A87D73F00575B10 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				46B7107C1A87D73F00575B10 /* LaunchScreen.xib */,
+				46B710941A87E5C800575B10 /* Dopamine-Bridging-Header.h */,
 				46B710721A87D73F00575B10 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -346,6 +349,7 @@
 				46B710741A87D73F00575B10 /* AppDelegate.swift in Sources */,
 				4637708F1AC8915400B31741 /* DopeSlider.swift in Sources */,
 				469BBCAF1AC8A3A6005295B1 /* CGFloatExtension.swift in Sources */,
+				461C74F11AC8D5C300848B38 /* ABImage.swift in Sources */,
 				463770851AC88C5700B31741 /* DopeAnimate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

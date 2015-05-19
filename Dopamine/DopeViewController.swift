@@ -31,7 +31,10 @@ class DopeViewController: UIViewController {
             if currentBackgroundColor.1 {
                 lastBackgroundColor = currentBackgroundColor.0
             }
+            
             DopeAnimate(animatingObject: self.view).fadeTo(currentBackgroundColor.0)
+            
+            currentDopeElement!.dopeColor = currentBackgroundColor.0
         }
     }
     
@@ -41,20 +44,24 @@ class DopeViewController: UIViewController {
         }
     }
     
-    var currentDopeElement: UIView?
-    
-    
-    
-    func loadTheDopeness() {
-        
-    }
+    var currentDopeElement: DopeView?
     
     func insert() {
         
     }
     
-    func insertDopeSlider(atY: CGFloat = UIScreen.mainScreen().bounds.height / 2) {
+    func insertDopeSlider(atY: CGFloat = CGFloat(arc4random_uniform(UInt32(UIScreen.mainScreen().bounds.height)))) {
+        let frame = CGRectMake(self.view.frame.width / 6, atY, self.view.frame.width * (2/3), 100)
+        currentDopeElement = DopeSlider(frame: frame)
+        (currentDopeElement as DopeSlider).listners.append({ (percent: Double) in
+            if percent > 0.9 {
+                println("play sound")
+            }
+            
+            self.currentBackgroundColor = (UIColor.fadeBetweenColors(self.lastBackgroundColor, secondColor: self.nextBackgroundColor, percent: percent), false)
+        })
         
+        self.view.addSubview(currentDopeElement!)
     }
     
     func insertDopePullToRefresh(from: ScreenEdge = ScreenEdge.random()) {

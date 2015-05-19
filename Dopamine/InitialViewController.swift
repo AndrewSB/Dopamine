@@ -9,9 +9,11 @@
 import UIKit
 
 class InitialViewController: DopeViewController {
-    override func viewWillAppear(animated: Bool) {
-        super.viewWillAppear(animated)
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
         
+        insertDopeSlider()
         
+        self.currentBackgroundColor = (UIColor.randomColor(), true)
     }
 }
