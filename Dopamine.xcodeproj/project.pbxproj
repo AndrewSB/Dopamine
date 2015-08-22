@@ -23,19 +23,8 @@
 		46B710791A87D73F00575B10 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46B710771A87D73F00575B10 /* Main.storyboard */; };
 		46B7107B1A87D73F00575B10 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46B7107A1A87D73F00575B10 /* Images.xcassets */; };
 		46B7107E1A87D73F00575B10 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46B7107C1A87D73F00575B10 /* LaunchScreen.xib */; };
-		46B7108A1A87D73F00575B10 /* DopamineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B710891A87D73F00575B10 /* DopamineTests.swift */; };
 		5434B30D4E27A8201A0C9065 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 49342BBA3EA138E7713BA712 /* libPods.a */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		46B710841A87D73F00575B10 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 46B710661A87D73F00575B10 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 46B7106D1A87D73F00575B10;
-			remoteInfo = Dopamine;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		461C74EE1AC8CB0700848B38 /* DopeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DopeView.swift; sourceTree = "<group>"; };
@@ -56,7 +45,6 @@
 		46B710781A87D73F00575B10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		46B7107A1A87D73F00575B10 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		46B7107D1A87D73F00575B10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		46B710831A87D73F00575B10 /* DopamineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DopamineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		46B710881A87D73F00575B10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		46B710891A87D73F00575B10 /* DopamineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DopamineTests.swift; sourceTree = "<group>"; };
 		46B710941A87E5C800575B10 /* Dopamine-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Dopamine-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -72,13 +60,6 @@
 			files = (
 				463770891AC88E5F00B31741 /* AudioToolbox.framework in Frameworks */,
 				5434B30D4E27A8201A0C9065 /* libPods.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		46B710801A87D73F00575B10 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,7 +139,6 @@
 			isa = PBXGroup;
 			children = (
 				46B7106E1A87D73F00575B10 /* Dopamine.app */,
-				46B710831A87D73F00575B10 /* DopamineTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -226,40 +206,19 @@
 			productReference = 46B7106E1A87D73F00575B10 /* Dopamine.app */;
 			productType = "com.apple.product-type.application";
 		};
-		46B710821A87D73F00575B10 /* DopamineTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 46B710901A87D73F00575B10 /* Build configuration list for PBXNativeTarget "DopamineTests" */;
-			buildPhases = (
-				46B7107F1A87D73F00575B10 /* Sources */,
-				46B710801A87D73F00575B10 /* Frameworks */,
-				46B710811A87D73F00575B10 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				46B710851A87D73F00575B10 /* PBXTargetDependency */,
-			);
-			name = DopamineTests;
-			productName = DopamineTests;
-			productReference = 46B710831A87D73F00575B10 /* DopamineTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		46B710661A87D73F00575B10 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0700;
 				LastSwiftUpdateCheck = 0700;
-				LastUpgradeCheck = 0610;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Andrew Breckenridge";
 				TargetAttributes = {
 					46B7106D1A87D73F00575B10 = {
 						CreatedOnToolsVersion = 6.1.1;
-					};
-					46B710821A87D73F00575B10 = {
-						CreatedOnToolsVersion = 6.1.1;
-						TestTargetID = 46B7106D1A87D73F00575B10;
 					};
 				};
 			};
@@ -277,7 +236,6 @@
 			projectRoot = "";
 			targets = (
 				46B7106D1A87D73F00575B10 /* Dopamine */,
-				46B710821A87D73F00575B10 /* DopamineTests */,
 			);
 		};
 /* End PBXProject section */
@@ -290,13 +248,6 @@
 				46B710791A87D73F00575B10 /* Main.storyboard in Resources */,
 				46B7107E1A87D73F00575B10 /* LaunchScreen.xib in Resources */,
 				46B7107B1A87D73F00575B10 /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		46B710811A87D73F00575B10 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,23 +306,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		46B7107F1A87D73F00575B10 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				46B7108A1A87D73F00575B10 /* DopamineTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		46B710851A87D73F00575B10 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 46B7106D1A87D73F00575B10 /* Dopamine */;
-			targetProxy = 46B710841A87D73F00575B10 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		46B710771A87D73F00575B10 /* Main.storyboard */ = {
@@ -413,6 +348,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -481,6 +417,7 @@
 				INFOPLIST_FILE = Dopamine/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "asb.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Dopamine/Dopamine-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -496,42 +433,9 @@
 				INFOPLIST_FILE = Dopamine/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "asb.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Dopamine/Dopamine-Bridging-Header.h";
-			};
-			name = Release;
-		};
-		46B710911A87D73F00575B10 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = DopamineTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dopamine.app/Dopamine";
-			};
-			name = Debug;
-		};
-		46B710921A87D73F00575B10 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = DopamineTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dopamine.app/Dopamine";
 			};
 			name = Release;
 		};
@@ -552,15 +456,6 @@
 			buildConfigurations = (
 				46B7108E1A87D73F00575B10 /* Debug */,
 				46B7108F1A87D73F00575B10 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		46B710901A87D73F00575B10 /* Build configuration list for PBXNativeTarget "DopamineTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				46B710911A87D73F00575B10 /* Debug */,
-				46B710921A87D73F00575B10 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -20,7 +20,7 @@ class DopeSlider: DopeView {
     var arrowImageView: UIImageView?
     var slidPercentage: Double = 0 {
         didSet {
-            for (index, element) in enumerate(listners) {
+            for (index, element) in listners.enumerate() {
                 element(slidPercentage)
             }
         }
@@ -40,6 +40,10 @@ class DopeSlider: DopeView {
         
         setup()
         addGestures()
+    }
+
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
     
     func setup() {
@@ -61,7 +65,7 @@ class DopeSlider: DopeView {
         arrowImageView!.image = ABImage(CGImage: arrowImage.CGImage, scale: arrowImage.scale, orientation: .Right)
         
         colorListners.append({ (color: UIColor) in
-            (self.arrowImageView!.image! as ABImage).backgroundColor = color
+            (self.arrowImageView!.image! as! ABImage).backgroundColor = color
         })
         
         sliderGrabbyThing!.addSubview(arrowImageView!)

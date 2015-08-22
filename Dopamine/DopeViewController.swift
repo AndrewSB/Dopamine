@@ -53,7 +53,7 @@ class DopeViewController: UIViewController {
     func insertDopeSlider(atY: CGFloat = CGFloat(arc4random_uniform(UInt32(UIScreen.mainScreen().bounds.height)))) {
         let frame = CGRectMake(self.view.frame.width / 6, atY, self.view.frame.width * (2/3), 100)
         currentDopeElement = DopeSlider(frame: frame)
-        (currentDopeElement as DopeSlider).listners.append({ (percent: Double) in
+        (currentDopeElement as! DopeSlider).listners.append({ (percent: Double) in
             if percent > 0.9 {
                 println("play sound")
             }
