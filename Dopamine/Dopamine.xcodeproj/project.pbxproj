@@ -1,0 +1,416 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		46D5ADE81B89323300F3EC41 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D5ADE71B89323300F3EC41 /* AppDelegate.swift */; };
+		46D5ADEA1B89323300F3EC41 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D5ADE91B89323300F3EC41 /* ViewController.swift */; };
+		46D5ADED1B89323300F3EC41 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46D5ADEB1B89323300F3EC41 /* Main.storyboard */; };
+		46D5ADEF1B89323300F3EC41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46D5ADEE1B89323300F3EC41 /* Assets.xcassets */; };
+		46D5ADF21B89323300F3EC41 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46D5ADF01B89323300F3EC41 /* LaunchScreen.storyboard */; };
+		46D5ADFD1B89323300F3EC41 /* DopamineUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D5ADFC1B89323300F3EC41 /* DopamineUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		46D5ADF91B89323300F3EC41 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 46D5ADDC1B89323300F3EC41 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 46D5ADE31B89323300F3EC41;
+			remoteInfo = Dopamine;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		46D5ADE41B89323300F3EC41 /* Dopamine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dopamine.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		46D5ADE71B89323300F3EC41 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		46D5ADE91B89323300F3EC41 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		46D5ADEC1B89323300F3EC41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		46D5ADEE1B89323300F3EC41 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		46D5ADF11B89323300F3EC41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		46D5ADF31B89323300F3EC41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46D5ADF81B89323300F3EC41 /* DopamineUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DopamineUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		46D5ADFC1B89323300F3EC41 /* DopamineUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DopamineUITests.swift; sourceTree = "<group>"; };
+		46D5ADFE1B89323300F3EC41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		46D5ADE11B89323300F3EC41 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46D5ADF51B89323300F3EC41 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		46D5ADDB1B89323300F3EC41 = {
+			isa = PBXGroup;
+			children = (
+				46D5ADE61B89323300F3EC41 /* Dopamine */,
+				46D5ADFB1B89323300F3EC41 /* DopamineUITests */,
+				46D5ADE51B89323300F3EC41 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		46D5ADE51B89323300F3EC41 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				46D5ADE41B89323300F3EC41 /* Dopamine.app */,
+				46D5ADF81B89323300F3EC41 /* DopamineUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		46D5ADE61B89323300F3EC41 /* Dopamine */ = {
+			isa = PBXGroup;
+			children = (
+				46D5ADE71B89323300F3EC41 /* AppDelegate.swift */,
+				46D5AE081B89323E00F3EC41 /* Views */,
+				46D5AE071B89323900F3EC41 /* Supporting Files */,
+			);
+			path = Dopamine;
+			sourceTree = "<group>";
+		};
+		46D5ADFB1B89323300F3EC41 /* DopamineUITests */ = {
+			isa = PBXGroup;
+			children = (
+				46D5ADFC1B89323300F3EC41 /* DopamineUITests.swift */,
+				46D5ADFE1B89323300F3EC41 /* Info.plist */,
+			);
+			path = DopamineUITests;
+			sourceTree = "<group>";
+		};
+		46D5AE071B89323900F3EC41 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				46D5ADEE1B89323300F3EC41 /* Assets.xcassets */,
+				46D5ADF01B89323300F3EC41 /* LaunchScreen.storyboard */,
+				46D5ADF31B89323300F3EC41 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		46D5AE081B89323E00F3EC41 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				46D5ADE91B89323300F3EC41 /* ViewController.swift */,
+				46D5ADEB1B89323300F3EC41 /* Main.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		46D5ADE31B89323300F3EC41 /* Dopamine */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46D5AE011B89323300F3EC41 /* Build configuration list for PBXNativeTarget "Dopamine" */;
+			buildPhases = (
+				46D5ADE01B89323300F3EC41 /* Sources */,
+				46D5ADE11B89323300F3EC41 /* Frameworks */,
+				46D5ADE21B89323300F3EC41 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Dopamine;
+			productName = Dopamine;
+			productReference = 46D5ADE41B89323300F3EC41 /* Dopamine.app */;
+			productType = "com.apple.product-type.application";
+		};
+		46D5ADF71B89323300F3EC41 /* DopamineUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46D5AE041B89323300F3EC41 /* Build configuration list for PBXNativeTarget "DopamineUITests" */;
+			buildPhases = (
+				46D5ADF41B89323300F3EC41 /* Sources */,
+				46D5ADF51B89323300F3EC41 /* Frameworks */,
+				46D5ADF61B89323300F3EC41 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				46D5ADFA1B89323300F3EC41 /* PBXTargetDependency */,
+			);
+			name = DopamineUITests;
+			productName = DopamineUITests;
+			productReference = 46D5ADF81B89323300F3EC41 /* DopamineUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		46D5ADDC1B89323300F3EC41 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Andrew Breckenridge";
+				TargetAttributes = {
+					46D5ADE31B89323300F3EC41 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					46D5ADF71B89323300F3EC41 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 46D5ADE31B89323300F3EC41;
+					};
+				};
+			};
+			buildConfigurationList = 46D5ADDF1B89323300F3EC41 /* Build configuration list for PBXProject "Dopamine" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 46D5ADDB1B89323300F3EC41;
+			productRefGroup = 46D5ADE51B89323300F3EC41 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				46D5ADE31B89323300F3EC41 /* Dopamine */,
+				46D5ADF71B89323300F3EC41 /* DopamineUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		46D5ADE21B89323300F3EC41 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46D5ADF21B89323300F3EC41 /* LaunchScreen.storyboard in Resources */,
+				46D5ADEF1B89323300F3EC41 /* Assets.xcassets in Resources */,
+				46D5ADED1B89323300F3EC41 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46D5ADF61B89323300F3EC41 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		46D5ADE01B89323300F3EC41 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46D5ADEA1B89323300F3EC41 /* ViewController.swift in Sources */,
+				46D5ADE81B89323300F3EC41 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46D5ADF41B89323300F3EC41 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46D5ADFD1B89323300F3EC41 /* DopamineUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		46D5ADFA1B89323300F3EC41 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 46D5ADE31B89323300F3EC41 /* Dopamine */;
+			targetProxy = 46D5ADF91B89323300F3EC41 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		46D5ADEB1B89323300F3EC41 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				46D5ADEC1B89323300F3EC41 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		46D5ADF01B89323300F3EC41 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				46D5ADF11B89323300F3EC41 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		46D5ADFF1B89323300F3EC41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		46D5AE001B89323300F3EC41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		46D5AE021B89323300F3EC41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Dopamine/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tfw.Dopamine;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		46D5AE031B89323300F3EC41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Dopamine/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tfw.Dopamine;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		46D5AE051B89323300F3EC41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = DopamineUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tfw.DopamineUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Dopamine;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		46D5AE061B89323300F3EC41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = DopamineUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tfw.DopamineUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Dopamine;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		46D5ADDF1B89323300F3EC41 /* Build configuration list for PBXProject "Dopamine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46D5ADFF1B89323300F3EC41 /* Debug */,
+				46D5AE001B89323300F3EC41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46D5AE011B89323300F3EC41 /* Build configuration list for PBXNativeTarget "Dopamine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46D5AE021B89323300F3EC41 /* Debug */,
+				46D5AE031B89323300F3EC41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		46D5AE041B89323300F3EC41 /* Build configuration list for PBXNativeTarget "DopamineUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46D5AE051B89323300F3EC41 /* Debug */,
+				46D5AE061B89323300F3EC41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 46D5ADDC1B89323300F3EC41 /* Project object */;
+}
