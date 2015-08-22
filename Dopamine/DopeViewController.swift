@@ -55,7 +55,7 @@ class DopeViewController: UIViewController {
         currentDopeElement = DopeSlider(frame: frame)
         (currentDopeElement as! DopeSlider).listners.append({ (percent: Double) in
             if percent > 0.9 {
-                println("play sound")
+                print("play sound")
             }
             
             self.currentBackgroundColor = (UIColor.fadeBetweenColors(self.lastBackgroundColor, secondColor: self.nextBackgroundColor, percent: percent), false)

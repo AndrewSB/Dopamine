@@ -6,7 +6,7 @@
 //  Copyright (c) 2015 Andrew Breckenridge. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 extension UIImage {    
     func tint(color: UIColor) -> UIImage {
@@ -15,7 +15,7 @@ extension UIImage {
         let c = UIGraphicsGetCurrentContext();
         self.drawInRect(rect)
         CGContextSetFillColorWithColor(c, color.CGColor);
-        CGContextSetBlendMode(c, kCGBlendModeSourceAtop);
+        CGContextSetBlendMode(c, CGBlendMode.SourceAtop);
         CGContextFillRect(c, rect);
         let result = UIGraphicsGetImageFromCurrentImageContext();
         UIGraphicsEndImageContext();

@@ -6,7 +6,7 @@
 //  Copyright (c) 2015 Andrew Breckenridge. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 class DopeAnimate {
     var animatingObject: NSObject
@@ -16,9 +16,9 @@ class DopeAnimate {
     }
     
     func fadeTo(color: UIColor) {
-        let animation = POPSpringAnimation(propertyNamed: kPOPViewBackgroundColor)
-        animation.toValue = color.CGColor
-        
-        self.animatingObject.pop_addAnimation(animation, forKey: "colorAnimation")
+//        let animation = POPSpringAnimation(propertyNamed: kPOPViewBackgroundColor)
+//        animation.toValue = color.CGColor
+//        
+//        self.animatingObject.pop_addAnimation(animation, forKey: "colorAnimation")
     }
 }

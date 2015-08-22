@@ -62,7 +62,7 @@ class DopeSlider: DopeView {
         
         let arrowImage = UIImage(named: "arrow")!
         
-        arrowImageView!.image = ABImage(CGImage: arrowImage.CGImage, scale: arrowImage.scale, orientation: .Right)
+        arrowImageView!.image = ABImage(CGImage: arrowImage.CGImage!, scale: arrowImage.scale, orientation: .Right)
         
         colorListners.append({ (color: UIColor) in
             (self.arrowImageView!.image! as! ABImage).backgroundColor = color

@@ -6,7 +6,7 @@
 //  Copyright (c) 2015 Andrew Breckenridge. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 extension CGFloat {
     func toDouble() -> Double {
