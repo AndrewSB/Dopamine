@@ -12,8 +12,18 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
     }
 
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        let centerRect = CGRect.centerWithSize(view.center, size: CGSize(width: 340, height: 44))
+        let unlock = UnlockSlider(colors: (UIColor.fromHex("FFC0CB"), UIColor.fromHex("E9967A")), frame: centerRect)
+        unlock.view = self
+        
+        
+        view.addSubview(unlock)
+    }
 }
 
