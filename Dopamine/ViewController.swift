@@ -8,7 +8,15 @@
 
 import UIKit
 
+protocol Dopaminable {
+    func add()
+    func remove()
+}
+
+
 class ViewController: UIViewController {
+    
+    var currentDopamine: Dopaminable!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,10 +26,16 @@ class ViewController: UIViewController {
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         
+        addSlider()
+    }
+    
+    func addSlider() {
+        
         let centerRect = CGRect.centerWithSize(view.center, size: CGSize(width: 340, height: 44))
         let unlock = UnlockSlider(colors: (UIColor.fromHex("FFC0CB"), UIColor.fromHex("E9967A")), frame: centerRect)
         unlock.view = self
         
+        self.currentDopamine = unlock
         
         view.addSubview(unlock)
     }

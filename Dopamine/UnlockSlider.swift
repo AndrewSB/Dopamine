@@ -18,7 +18,7 @@ class UnlockSlider: UISlider {
         }
     }
     
-    var view: UIViewController?
+    var view: ViewController?
     
     convenience init(colors: (UIColor, UIColor), frame: CGRect) {
         self.init(frame: frame)
@@ -41,7 +41,7 @@ class UnlockSlider: UISlider {
         maximumTrackTintColor = UIColor.clearColor()
         
         let backgroundView = UIView(frame: CGRect(origin: CGPoint.zero, size: self.frame.size))
-        backgroundView.backgroundColor = UIColor.greenColor()
+        backgroundView.backgroundColor = UIColor.fromHex("00BFFF")
         backgroundView.userInteractionEnabled = false
         
         backgroundView.layer.cornerRadius = backgroundView.frame.height / 2
@@ -57,6 +57,21 @@ class UnlockSlider: UISlider {
     
     func sliderValueChanged(sender: UISlider) {
         currentColor = UIColor.fadeBetweenColors(colors.0, secondColor: colors.1, percent: Double(sender.value))
+        if sender.value > 0.999 {
+            remove()
+        }
     }
 
+}
+
+extension UnlockSlider: Dopaminable {
+    func add() {
+        print("add")
+    }
+    
+    func remove() {
+        print("remove")
+        self.removeFromSuperview()
+        view?.addSlider()
+    }
 }
